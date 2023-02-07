@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="styleheet" href="style3.css"/>
+    <link rel="stylesheet" href="bootstrap.min.css"/>   
+    <script src="jquery.min.js"></script>
+    <script  src="bootstrap.min.js"></script>
+    </head>
+    
+    
+    <style>
+             body{
+           background-color:#F2F4F4;
+            
+            
+        }
+       
+        .se{
+            margin-top: 10px;
+        }
+    
+    
+    </style>
+    <body><header>
+         <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">RFID-TAG</a>
+            </div>
+
+            <!-- Menu Items -->
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="acceil.php">HOME</a></li>
+                    <li class="dropdown">   <a href="#" class="dropdown-toggle" data-toggle="dropdown">GESTION ETUDIANT <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                           <li><a class="lo" href="showing.php">AFFICHAGE</a></li>
+                            <li><a class="lo" href="adding.php">ADD</a></li>
+                            <li><a class="lo" href="delete.html" >DELETE</a></li>
+                            <li><a class="lo" href="uprech.html" >UPDATE</a></li>
+                            <li><a class="lo" href="recherche.php" >RECHERCHE</a></li>
+                        </ul>
+                        <li class="active"><a href="carac.php">CARACTERISTIQUE </a></li>
+                    </li>
+                  
+
+                    <!-- drop down menu -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My EMPLOI DU TEMPS <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="rechemp.php">AFFICHER</a></li>
+                            <li><a href="emploi.php" >AJOUTER UN EMPLOI</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div >
+                    <ul class="nav navbar-nav">
+               <li> <a href="#"  >ABOUT</a></li>
+                    </ul>
+            </div>
+                  <div >
+                    <ul class="nav navbar-nav">
+               <li> <a href="#"  >HELP</a></li>
+                    </ul>
+            </div>
+
+                <!--right align -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="#">Logout</a></li>
+                   
+                </ul>
+
+
+            </div>
+
+        </div>
+    </nav>
+
+        </header>
+
+    <div class="container">
+    <h1 class="well">ADD STUDENT</h1>
+	<div class="col-lg-12 well">
+	<div class="row">
+				<form>
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<label>First Name</label>
+								<input type="text" placeholder="Enter First Name Here.." class="form-control">
+							</div>
+							<div class="col-sm-6 form-group">
+								<label>Last Name</label>
+								<input type="text" placeholder="Enter Last Name Here.." class="form-control">
+							</div>
+						</div>					
+						<div class="form-group">
+							<label>Address</label>
+							<textarea placeholder="Enter Address Here.." rows="3" class="form-control"></textarea>
+						</div>	
+						<div class="row">
+							<div class="col-sm-4 form-group">
+								<label>CNI</label>
+								<input type="text" placeholder="Enter City Name Here.." class="form-control">
+							</div>	
+							<div class="col-sm-4 form-group">
+								<label>CNE</label>
+								<input type="text" placeholder="Enter State Name Here.." class="form-control">
+							</div>	
+							<div class="col-sm-4 form-group">
+								<label>Code Apogée</label>
+								<input type="text" placeholder="Enter Zip Code Here.." class="form-control">
+							</div>		
+						</div>
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<label>Code Carte</label>
+								<input type="text" placeholder="Enter Designation Here.." class="form-control">
+							</div>		
+							<div class="col-sm-6 form-group">
+								<label>Date of Birth</label>
+								<input id="date" type="date" class="form-control">
+							</div>	
+						</div>						
+					<div class="form-group">
+						<label>Phone Number</label>
+						<input type="number" id="number" placeholder="Enter Phone Number Here.." class="form-control">
+					</div>		
+					<div class="form-group">
+						<label>Email Address</label>
+						<input type="text" placeholder="Enter Email Address Here.." class="form-control">
+                        <div class="se">
+                        <select name="sel2" >
+                <option value="sel1"> Semestre</option>
+            <option value="m1"> S1</option>
+            <option value="m2"> S2</option>
+            <option value="m3"> S3</option>
+            <option value="m4"> S4</option>
+            <option value="m5"> S5</option>
+            <option value="m6"> S6</option>
+        </select>
+                      
+                   
+                                  <select name="sel4" >
+                <option value="sel1"> selectionnez filiere</option>
+            <option value="mi"> Genie Industriel</option>
+            <option value="ma"> Genie Mecanique</option>
+            <option value="mp"> Genie Electrique</option>
+            <option value="mc"> Big Data et Internet des Objets</option>
+      
+        </select>
+                            </div>
+                        
+					</div>	
+					
+					<button type="button" class="btn btn-lg btn-info">SAVE</button>					
+                    </div>
+				</form> 
+				</div>
+	</div>
+	</div>
+       
+    </body>
