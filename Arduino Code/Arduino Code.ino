@@ -36,7 +36,7 @@ int j=0;
 int lcdColumns = 16; // I2C display coordinates
 int lcdRows = 2; // I2C display coordinates
 
-LiquidCrystal_I2C lcd(0x3F, lcdColumns, lcdRows);  // Start an LCD Object
+LiquidCrystal_I2C lcd("I2c address", lcdColumns, lcdRows);  // Start an LCD Object, change I2c address value by your LCD address eg: 0x27
 
 void setup()
 {
