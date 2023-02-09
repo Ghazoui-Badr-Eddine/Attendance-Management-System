@@ -26,7 +26,7 @@ SoftwareSerial mySerial(8,9);
 MFRC522 rfid(SS_PIN,RST_PIN);
 MFRC522::MIFARE_Key key; 
 byte id[No_Of_Card][4]={
-  {224,43,39,27},             //RFID card NO-1          
+  {224,43,39,27},             //RFID card NO-1 , place card next to the RFID, copy the code displayed in the serial monitor and paste it here         
   {188,32,7,133}              //RFID card NO-2
 };
 byte id_temp[3][3];
