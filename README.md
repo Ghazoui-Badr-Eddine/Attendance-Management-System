@@ -152,8 +152,7 @@ Use the website code to view all students' information, to perform CRUD operatio
 
 ## Demo
 
-
-https://user-images.githubusercontent.com/58095725/218060891-b1763222-ec46-47c7-9406-f52991177b28.mp4
+https://user-images.githubusercontent.com/58095725/218062428-859df37e-6c47-49ac-8da0-64be4f9376d7.mp4
 
 
 ## Troubleshooting
